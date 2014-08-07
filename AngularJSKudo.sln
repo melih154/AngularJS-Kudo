@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSDemo", "AngularJSDemo\AngularJSDemo.csproj", "{60A957BC-00E4-4631-B049-461E6348C360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSDemo.Tests", "AngularJSDemo.Tests\AngularJSDemo.Tests.csproj", "{E87DBA49-C27A-4A7D-8320-9A91CAD5ECF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{7D13752A-CA12-40CD-BEDD-85556D877D66}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{8E58B362-9ECA-4137-8D3C-7A7BD46A9D20}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\AngularJSDemo-WAWS-dev.json = PublishScripts\Configurations\AngularJSDemo-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60A957BC-00E4-4631-B049-461E6348C360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A957BC-00E4-4631-B049-461E6348C360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A957BC-00E4-4631-B049-461E6348C360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A957BC-00E4-4631-B049-461E6348C360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E87DBA49-C27A-4A7D-8320-9A91CAD5ECF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E87DBA49-C27A-4A7D-8320-9A91CAD5ECF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E87DBA49-C27A-4A7D-8320-9A91CAD5ECF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E87DBA49-C27A-4A7D-8320-9A91CAD5ECF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E58B362-9ECA-4137-8D3C-7A7BD46A9D20} = {7D13752A-CA12-40CD-BEDD-85556D877D66}
+	EndGlobalSection
+EndGlobal
