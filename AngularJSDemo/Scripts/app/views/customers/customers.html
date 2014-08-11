@@ -1,17 +1,18 @@
 ﻿<div class="container">
-    <h2>View 1</h2>
-    Name:
+    <h2>Customers</h2>
+    Search by Name:
     <br />
     <input type="text" data-ng-model="filter.name" />
     <br />
 
     <ul>
-        <li data-ng-repeat="cust in customers | filter:filter.name | orderBy:name">
-            {{ cust.name | uppercase }} - {{ cust.city | lowercase}} - {{cust.under25 | checkmark}}
-        </li>
+        <li data-ng-repeat="customer in customers | filter:filter.name | orderBy:name">
+            
+            <a href="#/customeredit/{{customer.id}}">{{ customer.name | uppercase }}</a>
+                {{ customer.city | lowercase}} </li>
     </ul>
 
-    <br />
+    <!--<br />
     Customer Name<br />
     <input type="text" data-ng-model="newCustomer.name" />
     <br />
@@ -20,5 +21,5 @@
     <br />
     <button ng-click="addCustomer()">Add Customer</button>
     <br />
-    <a href="#/view2">View 2</a>
+    <a href="#/view2">View 2</a>-->
 </div>

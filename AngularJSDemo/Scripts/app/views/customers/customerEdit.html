@@ -1,0 +1,31 @@
+﻿<div class="container">
+    <header>
+        <h3>{{ title }} Customer</h3>
+    </header>
+    <form name="editForm" novalidate>
+        <div >
+            <h4>{{ customer.name }} </h4>
+            <br/>
+        </div>
+        <div>
+            <div >
+                Name:
+            </div>
+            <div >
+                <input type="text" name="firstName" data-ng-model="customer.name" required />
+                <span class="errorMessage" ng-show="editForm.firstName.$dirty && editForm.firstName.$invalid">
+                    First name is required
+                </span>
+            </div>
+            <br />
+        </div>
+
+        <div >
+            <div>
+                <button type="submit" class="btn btn-primary" data-ng-click="saveCustomer()" ng-disabled="editForm.$invalid || !editForm.$dirty">{{buttonText}}</button>
+                &nbsp;&nbsp;
+                <button data-ng-if="customer.id > 0" data-ng-click="deleteCustomer()">Delete</button>
+            </div>
+        </div>
+</form>
+</div>

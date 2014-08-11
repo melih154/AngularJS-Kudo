@@ -229,9 +229,14 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Partials\View1.html" />
-    <Content Include="Partials\View2.html" />
+    <Content Include="index.html" />
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\controllers\customers\customerEditController.js" />
+    <Content Include="Scripts\app\controllers\customers\customersController.js" />
+    <Content Include="Scripts\app\filters\activeCustomerFilter.js" />
+    <Content Include="Scripts\app\services\customersService.js" />
+    <Content Include="Scripts\app\views\customers\customerEdit.html" />
+    <Content Include="Scripts\app\views\customers\customers.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -309,6 +314,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\app\directives\" />
+    <Folder Include="Scripts\app\partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
